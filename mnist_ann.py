@@ -236,7 +236,7 @@ print(results[1])
 file2 = open("test_accuracy.txt","w+")
 x = results[1]
 print(x)
-file2.write(x)
+file2.write(str(x))
 file2.close()
 
 
