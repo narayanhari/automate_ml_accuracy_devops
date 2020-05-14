@@ -211,6 +211,7 @@ h = model.fit(x_train, y_train_cat, epochs=2)
 
 # In[44]:
 
+model.save("NHM_mnist_ANN2.h5")
 
 results = model.evaluate(x_test, y_test_cat, verbose=0)
 
@@ -231,6 +232,12 @@ print(results[0])
 
 
 print(results[1])
+
+file2 = open("test_accuracy.txt","w+")
+x = results[1]
+print(x)
+file2.write(x)
+file2.close()
 
 
 # In[39]:
@@ -284,7 +291,6 @@ print(results[1])
 # In[46]:
 
 
-model.save("NHM_mnist_ANN2.h5")
 
 
 # In[74]:
