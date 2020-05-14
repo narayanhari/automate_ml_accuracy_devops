@@ -5,7 +5,7 @@ from keras.models import load_model
 
 m= load_model("NHM_mnist_ANN2.h5")
 
-results = model.evaluate(x_test, y_test_cat, verbose=0)
+results = m.evaluate(x_test, y_test_cat, verbose=0)
 
 
 # In[41]:
